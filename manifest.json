@@ -1,0 +1,19 @@
+{
+    "manifest_version" : 2,
+    "name" : "Kappa Downloader",
+    "version" : "0.1.0",
+    "content_scripts" : [
+      {
+        "matches" : [
+          "https://www.instagram.com/*",
+          "https://www.youtube.com/*"
+        ],
+        "js" : ["content.js"]
+      }
+    ],
+    "permissions" : ["tabs", "downloads"],
+    "browser_action" : {
+      "default_icon" : "kappa.png",
+      "default_popup" : "popup.html"
+    }
+}
